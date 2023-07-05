@@ -1,5 +1,5 @@
 # Legionary ⚔️ <a href="https://youtu.be/WG0DcoSDQ34">Take a look! 👀</a>
-## A 2D platformer game made with Unity and C# <a href="https://www.dropbox.com/scl/fo/v0zubu2mxdl96ep4o1ibs/h?rlkey=04zjfm05xxdqg78gjaqrfkw3n&dl=0">Download</a>
+## A 2D platformer game made with Unity and C# <a href="https://www.dropbox.com/scl/fo/v0zubu2mxdl96ep4o1ibs/h?rlkey=04zjfm05xxdqg78gjaqrfkw3n&dl=1">Download</a>
 # Maintenance ![maintenance-status](https://img.shields.io/badge/maintenance-passively--maintained-yellowgreen.svg)
 # Recommened Specs
 | Specification     | Minimum                          | Recommended                     |
