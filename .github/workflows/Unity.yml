@@ -1,27 +1,41 @@
-name: CI/CD
+name: CI Build
 
 on:
   push:
     branches:
       - master
-  workflow_dispatch: {}
-
+      
 permissions:
   contents: write
-
+  
 jobs:
-  unity-build:
-    name: Build
-    runs-on: windows-latest
+  buildForAllSupportedPlatforms:
+    name: Build for ${{ matrix.targetPlatform }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        targetPlatform:
+          - Android # Build an Android .apk standalone app.
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-      
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: actions/cache@v2
+        with:
+          path: Library
+          key: Library-${{ matrix.targetPlatform }}
+          restore-keys: Library-
       - uses: game-ci/unity-builder@v2
         env:
-         UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-         UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-         UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
-          customImage: unityci/editor-2023.1.5f1-1.1.2
-          targetPlatform: StandaloneWindows64
+          targetPlatform: ${{ matrix.targetPlatform }}
+          versioning: Semantic
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Build-${{ matrix.targetPlatform }}
+          path: build/${{ matrix.targetPlatform }}
