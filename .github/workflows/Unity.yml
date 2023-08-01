@@ -1,4 +1,4 @@
-name: Acquire activation file
+name: CI/CD
 
 on:
   push:
@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   unity-build:
-    name: Build Unity Project
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -23,4 +23,4 @@ jobs:
          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
-          targetPlatform: Windows
+          targetPlatform: Window
