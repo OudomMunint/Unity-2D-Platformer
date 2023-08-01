@@ -1,4 +1,4 @@
-name: CI/CD
+name: Acquire activation file
 
 on:
   push:
@@ -7,7 +7,8 @@ on:
   workflow_dispatch: {}
 
 jobs:
-  - name: Build Unity Project
+  unity-build:
+    name: Build Unity Project
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -25,4 +26,4 @@ jobs:
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
-          targetPlatform: WebGL
+          targetPlatform: Windows
