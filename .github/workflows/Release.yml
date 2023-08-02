@@ -1,0 +1,28 @@
+name: UE Release
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+    tags:
+      - '*'
+permissions:
+  contents: write
+  
+jobs:
+  Checkout-Repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PROD
+        uses: actions/checkout@v2
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18.x
+          
+      - name: Create Release
+        uses: ncipollo/release-action@v1.12.0
+        with:
+          artifacts: "react-github-actions-build"
+          tag: v1.0.0
