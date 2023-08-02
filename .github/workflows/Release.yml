@@ -1,4 +1,4 @@
-name: UE Release
+name: Unity Release
 
 on:
   push:
