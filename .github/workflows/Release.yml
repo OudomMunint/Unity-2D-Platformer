@@ -21,8 +21,11 @@ jobs:
         with:
           node-version: 18.x
           
+      - name: Install dependencies
+        run: npm install
+        
       - name: Create Release
         uses: ncipollo/release-action@v1.12.0
         with:
           artifacts: "react-github-actions-build"
-          tag: v1.0.2
+          tag: v1.0.3
