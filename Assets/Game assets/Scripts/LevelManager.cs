@@ -17,14 +17,15 @@ public class LevelManager : MonoBehaviour
 
     //Variables for the UI 
     public Text ScoreText;
+
     //public Text Score;
 
+    [System.Obsolete]
     void Start()
     {
         PlayerControl = FindObjectOfType<PlayerControl>();
         ScoreText.text = "Score: " + Coins;
     }
-
 
     void Update()
     {
