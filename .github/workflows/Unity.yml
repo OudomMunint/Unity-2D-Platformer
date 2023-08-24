@@ -16,7 +16,7 @@ jobs:
       fail-fast: true
       matrix:
         targetPlatform:
-          - StandaloneWindows # Build an Android .apk standalone app.
+          - StandaloneWindows64 # Build an Android .apk standalone app.
     steps:
       - uses: actions/checkout@v2
         with:
