@@ -32,8 +32,7 @@ jobs:
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
-          targetPlatform: ${{ matrix.targetPlatform }}
-          versioning: Semantic
+          customImage: 'unityci/editor-ubuntu-2023.1.9f1-windows-mono-2.0.0'
 
       - uses: actions/upload-artifact@v2
         with:
