@@ -19,6 +19,5 @@
 | OS                | Windows 10 or macOS 10.12        | Windows 10 or macOS 10.15       |
 
 ‼️ Apple silicon isn't supported M1 & M2 SKUs <br>
-‼️ CI failing due to editor version `2023.2.0a15` it's in `alpha` therefore no docker image has been made for it. <br>
 ‼️ Target Platforms: `WebGL` `macOS` `UWP` `Windows` <br></br>
 ![Screenshot](2d.png)
