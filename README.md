@@ -5,8 +5,7 @@
 | Badge             | Status                           |
 |-------------------|----------------------------------|
 | Maintenance       | ![maintenance-status](https://img.shields.io/badge/maintenance-passively--maintained-yellowgreen.svg)   |
-| CI-Build          | [![CI Build](https://github.com/OudomMunint/Unity-2D-Platformer/actions/workflows/Unity.yml/badge.svg)](https://github.com/OudomMunint/Unity-2D-Platformer/actions/workflows/Unity.yml)                              |
-| Release           | [![Unity Release](https://github.com/OudomMunint/Unity-2D-Platformer/actions/workflows/Release.yml/badge.svg)](https://github.com/OudomMunint/Unity-2D-Platformer/actions/workflows/Release.yml)               |
+| CI-Build          | [![CI Build](https://github.com/OudomMunint/Unity-2D-Platformer/actions/workflows/Unity.yml/badge.svg)](https://github.com/OudomMunint/Unity-2D-Platformer/actions/workflows/Unity.yml)                              |              
 | Licence               | [![Acquire activation file](https://github.com/OudomMunint/Unity-2D-Platformer/actions/workflows/activation.yml/badge.svg)](https://github.com/OudomMunint/Unity-2D-Platformer/actions/workflows/activation.yml)                    |
 
 # Recommened Specs
