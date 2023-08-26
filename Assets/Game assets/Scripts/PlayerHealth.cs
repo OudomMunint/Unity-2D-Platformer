@@ -14,6 +14,7 @@ public class PlayerHealth : MonoBehaviour
     public Vector3 PlayerRespawn;
     public LevelManager GameLevelManager;
 
+    [System.Obsolete]
     void Start()
     {
         PlayerRespawn = transform.position;

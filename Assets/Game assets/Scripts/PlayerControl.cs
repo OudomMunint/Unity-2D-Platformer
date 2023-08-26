@@ -25,6 +25,7 @@ public class PlayerControl : MonoBehaviour
     //Defining Rigidbody
     Rigidbody2D PlayerRigid;
 
+    [System.Obsolete]
     void Start()
     {
         PlayerRigid = GetComponent<Rigidbody2D>();
