@@ -23,5 +23,5 @@ jobs:
       - name: Create Release
         uses: ncipollo/release-action@v1.12.0
         with:
-          artifacts: "react-github-actions-build"
-          tag: v1.1.5
+          artifacts: "unity-github-actions-build"
+          tag: v1.1.5.1

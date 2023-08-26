@@ -18,10 +18,10 @@ jobs:
         targetPlatform:
           - Android # Build an Android .apk standalone app.
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         with:
           path: Library
           key: Library-${{ matrix.targetPlatform }}
@@ -35,7 +35,7 @@ jobs:
           targetPlatform: ${{ matrix.targetPlatform }}
           versioning: Semantic
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: Build-${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
