@@ -32,10 +32,15 @@ jobs:
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
-          #customImage: 'unityci/editor-ubuntu-2023.1.9f1-windows-mono-2.0.0'
           customImage: 'unityci/editor:2023.1.9f1-windows-mono-2.0.0'
 
       - uses: actions/upload-artifact@v3
         with:
           name: Build-${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
+        
+      - name: Create Release
+        uses: ncipollo/release-action@v1.12.0
+        with:
+          artifacts: "unity-github-actions-build"
+          tag: v1.2.1.2
