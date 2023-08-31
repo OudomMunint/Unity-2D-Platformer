@@ -16,7 +16,10 @@ jobs:
       fail-fast: true
       matrix:
         targetPlatform:
-          - StandaloneWindows64 # Build an Android .apk standalone app.
+          - StandaloneWindows64
+          - StandaloneOSX
+          - WebGL
+          - StandaloneWindows
     steps:
       - uses: actions/checkout@v3
         with:
@@ -43,4 +46,4 @@ jobs:
         uses: ncipollo/release-action@v1.12.0
         with:
           artifacts: "unity-github-actions-build"
-          tag: v1.2.1.2
+          tag: v1.2.1.3
