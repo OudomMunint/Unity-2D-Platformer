@@ -4,10 +4,10 @@ on:
   push:
     branches:
       - master
-      
+
 permissions:
   contents: write
-  
+
 jobs:
   buildForAllSupportedPlatforms:
     name: Build for ${{ matrix.targetPlatform }}
@@ -36,13 +36,12 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           customImage: 'unityci/editor:2023.1.9f1-windows-mono-2.0.0'
-
       - uses: actions/upload-artifact@v3
         with:
           name: Build-${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
-        
       - name: Create Release
+        if: matrix.targetPlatform == 'StandaloneWindows64'
         uses: ncipollo/release-action@v1.12.0
         with:
           artifacts: "unity-github-actions-build"
