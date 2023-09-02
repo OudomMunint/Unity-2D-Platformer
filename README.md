@@ -1,12 +1,11 @@
 # Legionary ⚔️ <a href="https://youtu.be/WG0DcoSDQ34">Take a look! 👀</a>
-## A 2D platformer game made with Unity and C# <a href="https://www.dropbox.com/scl/fo/v0zubu2mxdl96ep4o1ibs/h?rlkey=04zjfm05xxdqg78gjaqrfkw3n&dl=1">Download</a>
+### A 2D platformer game made with Unity and C#
 
 # Maintenance, Build & Release
 | Badge             | Status                           |
 |-------------------|----------------------------------|
 | Maintenance       | ![maintenance-status](https://img.shields.io/badge/maintenance-passively--maintained-yellowgreen.svg)   |
-| CI-Build          | [![CI Build](https://github.com/OudomMunint/Unity-2D-Platformer/actions/workflows/Unity.yml/badge.svg)](https://github.com/OudomMunint/Unity-2D-Platformer/actions/workflows/Unity.yml)                              |
-| Release           | [![Unity Release](https://github.com/OudomMunint/Unity-2D-Platformer/actions/workflows/Release.yml/badge.svg)](https://github.com/OudomMunint/Unity-2D-Platformer/actions/workflows/Release.yml)               |
+| CI-Build          | [![CI Build](https://github.com/OudomMunint/Unity-2D-Platformer/actions/workflows/Unity.yml/badge.svg)](https://github.com/OudomMunint/Unity-2D-Platformer/actions/workflows/Unity.yml)                              |              
 | Licence               | [![Acquire activation file](https://github.com/OudomMunint/Unity-2D-Platformer/actions/workflows/activation.yml/badge.svg)](https://github.com/OudomMunint/Unity-2D-Platformer/actions/workflows/activation.yml)                    |
 
 # Recommened Specs
@@ -20,4 +19,10 @@
 
 ‼️ Apple silicon isn't supported M1 & M2 SKUs <br>
 ‼️ Target Platforms: `WebGL` `macOS` `UWP` `Windows` <br></br>
+
+# Download
+- Click <a href="https://github.com/OudomMunint/Unity-2D-Platformer/releases">here</a> to go to the release page and download the game.
+- Currently the release page only offers windows build of the game.
+
+
 ![Screenshot](2d.png)
