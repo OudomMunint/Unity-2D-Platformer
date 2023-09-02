@@ -42,6 +42,9 @@ public class CamerController : MonoBehaviour {
         //Using lerp to moving the camera smoothly
         transform.position = Vector3.Lerp(transform.position, PlayerPosition, SmoothCameraPosition * Time.deltaTime);
 
+        // FPS counter
+        Debug.Log(1 / Time.deltaTime);
+
 
 
 //-------------------------------------------------------------------------------------
