@@ -1,5 +1,5 @@
 # Legionary ⚔️ <a href="https://youtu.be/WG0DcoSDQ34">Take a look! 👀</a>
-## A 2D platformer game made with Unity and C# <a href="https://www.dropbox.com/scl/fo/v0zubu2mxdl96ep4o1ibs/h?rlkey=04zjfm05xxdqg78gjaqrfkw3n&dl=1">Download</a>
+### A 2D platformer game made with Unity and C#
 
 # Maintenance, Build & Release
 | Badge             | Status                           |
@@ -19,4 +19,10 @@
 
 ‼️ Apple silicon isn't supported M1 & M2 SKUs <br>
 ‼️ Target Platforms: `WebGL` `macOS` `UWP` `Windows` <br></br>
+
+# Download
+- Click <a href="https://github.com/OudomMunint/Unity-2D-Platformer/releases">here</a> to go to the release page and download the game.
+- Currently the release page only offers windows build of the game.
+
+
 ![Screenshot](2d.png)
