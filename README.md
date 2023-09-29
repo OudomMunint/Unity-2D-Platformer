@@ -1,5 +1,5 @@
 # Legionary ⚔️ <a href="https://youtu.be/WG0DcoSDQ34">Take a look! 👀</a>
-### A 2D platformer game made with Unity and C#
+Legionary is a 2D platformer game made with Unity and C#
 
 # Maintenance, Build & Release
 | Badge             | Status                           |
@@ -17,7 +17,17 @@
 | GPU               | Intel UHD 630                    | GT 1030 2GB                     |
 | OS                | Windows 10 or macOS 10.12        | Windows 10 or macOS 10.15       |
 
-‼️ Apple silicon isn't supported M1 & M2 SKUs <br>
+# Recommened Specs: Apple Silicon
+| Specification     | Minimum                          | Recommended                     |
+|-------------------|----------------------------------|---------------------------------|
+| CPU               | Apple M1   | Apple M1       |
+| RAM               | 8GB                              | 8GB or higher                   |
+| Storage           | 1GB of free space                | 1GB of free sapce               |
+| GPU               | Apple M1 7 Core GPU                   | Apple M1 8 Core GPU 2GB                     |
+| OS                | macOS 12        | macOS 13.6
+
+~~‼️ Apple silicon isn't supported M1 & M2 SKUs~~ <br>
+‼️ Apple silicon now supported<br>
 ‼️ Target Platforms: `WebGL` `macOS` `UWP` `Windows` <br></br>
 
 # Download
