@@ -36,5 +36,6 @@ EditorBuildSettings:
     path: Assets/All scenes/Win screen 3.unity
     guid: 67452747005ed7d459daf23667517386
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 27d8e7e2e82cf894186cdc83a6d95166, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 7e8d149724e05184b8debec7798dd9bd, type: 2}
   m_UseUCBPForAssetBundles: 0
