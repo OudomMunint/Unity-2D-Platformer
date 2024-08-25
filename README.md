@@ -1,5 +1,7 @@
 # Legionary ⚔️ <a href="https://youtu.be/WG0DcoSDQ34">Take a look! 👀</a>
-Legionary is a 2D platformer game made with Unity and C#
+Legionary is a 2D platformer game made with `Unity` and `C#`. <br>
+This project targets `WebGL` `macOS` `UWP` `Windows`. <br>
+Find download links below, there are 3 builds available for download, `Windows x86_64`, `macOS x86` and `macOS arm64`.
 
 # Maintenance, Build & Release
 | Badge             | Status                           |
@@ -9,6 +11,7 @@ Legionary is a 2D platformer game made with Unity and C#
 | Licence               | [![Acquire activation file](https://github.com/OudomMunint/Unity-2D-Platformer/actions/workflows/activation.yml/badge.svg)](https://github.com/OudomMunint/Unity-2D-Platformer/actions/workflows/activation.yml)                    |
 
 # Recommened Specs
+## Windows & macOS x86_64
 | Specification     | Minimum                          | Recommended                     |
 |-------------------|----------------------------------|---------------------------------|
 | CPU               | Anything with more than 1 core   | i5-2500K or Ryzen 3 1400        |
@@ -20,19 +23,21 @@ Legionary is a 2D platformer game made with Unity and C#
 # Recommened Specs: Apple Silicon
 | Specification     | Minimum                          | Recommended                     |
 |-------------------|----------------------------------|---------------------------------|
-| CPU               | Apple M1   | Apple M1       |
-| RAM               | 8GB                              | 8GB or higher                   |
+| CPU               | Apple A12X       | Apple M1                                              |
+| RAM               | 6GB                              | 8GB or higher                   |
 | Storage           | 1GB of free space                | 1GB of free sapce               |
-| GPU               | Apple M1 7 Core GPU                   | Apple M1 8 Core GPU 2GB                     |
-| OS                | macOS 12        | macOS 13.6
+| GPU               | Apple A12X 7 Core GPU             | Apple M1 7 Core GPU                     |
+| OS                | macOS 11        | macOS 13.6 or 14
 
 ~~‼️ Apple silicon isn't supported M1 & M2 SKUs~~ <br>
 ‼️ Apple silicon now supported<br>
-‼️ Target Platforms: `WebGL` `macOS` `UWP` `Windows` <br></br>
 
-# Download
-- Click <a href="https://github.com/OudomMunint/Unity-2D-Platformer/releases">here</a> to go to the release page and download the game.
-- Currently the release page only offers windows build of the game.
+# Downloads
+Note: These builds were built with `Unity 2023.1.9f1`
+- <b>Windows x86_64:</b> [Here](https://www.dropbox.com/scl/fo/s4ppc87ib67726edamwlb/AOmhemTHV85Qs5boftIz8ko?rlkey=loeqhu2hv4rl57c3qh3efoezi&st=20wqdkas&dl=0)
+- <b>macOS x86 `Intel`:</b> [Here](https://www.dropbox.com/scl/fo/on93oy6gc82im8hx291af/AHcvN6A9zc9qo-3F3TpcXT8?rlkey=2a9t0umxt02k5g2ofpaqtmv1w&st=yindk9ry&dl=0)
+- <b>macOS arm64 `Apple Silicon`:</b> [Here](https://www.dropbox.com/scl/fo/on93oy6gc82im8hx291af/AHcvN6A9zc9qo-3F3TpcXT8?rlkey=2a9t0umxt02k5g2ofpaqtmv1w&st=yindk9ry&dl=0)
+- <b>WebGL:</b> None available, see issue [#14](https://github.com/OudomMunint/Unity-2D-Platformer/issues/14)
 
 
 ![Screenshot](2d.png)
