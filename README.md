@@ -6,7 +6,7 @@ Find download links below, there are 3 builds available for download, `Windows x
 # Maintenance, Build & Release
 | Badge             | Status                           |
 |-------------------|----------------------------------|
-| Maintenance       | ![maintenance-status](https://img.shields.io/badge/maintenance-passively--maintained-yellowgreen.svg)   |
+| Maintenance       | ![maintenance-status](https://img.shields.io/badge/maintenance-as--is-yellow.svg)   |
 | CI-Build          | [![CI Build](https://github.com/OudomMunint/Unity-2D-Platformer/actions/workflows/Unity.yml/badge.svg)](https://github.com/OudomMunint/Unity-2D-Platformer/actions/workflows/Unity.yml)                              |              
 | Licence               | [![Acquire activation file](https://github.com/OudomMunint/Unity-2D-Platformer/actions/workflows/activation.yml/badge.svg)](https://github.com/OudomMunint/Unity-2D-Platformer/actions/workflows/activation.yml)                    |
 
