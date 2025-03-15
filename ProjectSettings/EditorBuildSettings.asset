@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/All scenes/Level 3.unity
     guid: ac6a292b9bfb2374abd72fe5fdecc15f
   - enabled: 1
-    path: Assets/All scenes/Win screen Lvl2.unity
+    path: Assets/All scenes/Win screen 2.unity
     guid: 57996340a8c2cfc45a001b7cc919f4f4
   - enabled: 1
     path: Assets/All scenes/Win screen 3.unity
