@@ -37,6 +37,11 @@ public class GameOverManager : MonoBehaviour
 #endif
     }
 
+    public void OnTriggerEnter2D()
+    {
+        SceneManager.LoadScene("Abandon screen");
+    }
+
     // Update is called once per frame
     void Update()
     {
