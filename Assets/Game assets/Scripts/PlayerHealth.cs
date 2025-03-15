@@ -3,22 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] private float startHealth;
     public float currentHealth { get; private set; }
+
+    [SerializeField]
+    private float startHealth;
     private Animator Animation;
     private bool dead;
-
     public Vector3 PlayerRespawn;
     public LevelManager GameLevelManager;
 
-    [System.Obsolete]
     void Start()
     {
         PlayerRespawn = transform.position;
-        GameLevelManager = FindObjectOfType<LevelManager>();
+        GameLevelManager = FindFirstObjectByType<LevelManager>();
     }
 
     private void Awake()
@@ -31,12 +30,9 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = Mathf.Clamp(currentHealth - Damage, 0, startHealth);
 
-        if(currentHealth > 0)
-        {
-            
+        if (currentHealth > 0)
+        { 
             Animation.SetTrigger("Hurt");
-           
-
         }
         else
         {
