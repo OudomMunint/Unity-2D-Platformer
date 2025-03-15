@@ -8,21 +8,23 @@ public class GameWinManager : MonoBehaviour
 {
     public void OnTriggerEnter2D()
     {
-        //SceneManager.LoadScene("Win Screen");
         SetWinScreen();
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void Start()
     {
         CurrentLevel();
         AllScenes();
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+
+    public void Continue()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public Scene CurrentLevel()
@@ -59,4 +61,23 @@ public class GameWinManager : MonoBehaviour
         }
     }
 
+    public void GoToMain()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+
+    public void QuitGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+		Application.Quit();
+#endif
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 }
