@@ -27,7 +27,7 @@ public class PlayerHealth : MonoBehaviour
         Animation = GetComponent<Animator>();
     }
 
-    public void Healthloose(float Damage)
+    public void LoseHealth(float Damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - Damage, 0, startHealth);
 
@@ -45,10 +45,16 @@ public class PlayerHealth : MonoBehaviour
                 Animation.SetTrigger("Die");                            
                 GetComponent<PlayerControl>().enabled = true;
                 dead = true;
-                SceneManager.LoadScene("Game Over screen");
+
+                if (SceneManager.GetActiveScene().name == "Level 2")
+                {
+                    SceneManager.LoadScene("Game Over screen");
+                }
+                if (SceneManager.GetActiveScene().name == "Level 3")
+                {
+                    SceneManager.LoadScene("Game Over 2");
+                }
             }
-            
-            
         }
     }
 }

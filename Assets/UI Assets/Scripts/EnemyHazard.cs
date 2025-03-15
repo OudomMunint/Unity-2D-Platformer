@@ -10,7 +10,7 @@ public class EnemyHazard : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            collision.GetComponent<PlayerHealth>().Healthloose(Damage);
+            collision.GetComponent<PlayerHealth>().LoseHealth(Damage);
         }
     }
     // Start is called before the first frame update
