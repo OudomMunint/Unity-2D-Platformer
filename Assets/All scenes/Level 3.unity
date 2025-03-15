@@ -8853,7 +8853,7 @@ GameObject:
   - component: {fileID: 926566789}
   - component: {fileID: 926566788}
   - component: {fileID: 926566787}
-  - component: {fileID: 926566786}
+  - component: {fileID: 926566790}
   m_Layer: 0
   m_Name: Win Screen
   m_TagString: Untagged
@@ -8861,18 +8861,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &926566786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 926566785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ae5a9f04f49300408c315b722d8e2c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &926566787
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8986,6 +8974,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &926566790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926566785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78d13ec321999a14380248350abb58d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &950702132
 GameObject:
   m_ObjectHideFlags: 0
