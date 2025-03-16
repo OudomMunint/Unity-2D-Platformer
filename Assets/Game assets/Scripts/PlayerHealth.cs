@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -26,7 +27,7 @@ public class PlayerHealth : MonoBehaviour
         Animation = GetComponent<Animator>();
     }
 
-    public void LoseHealth(float Damage)
+    public async Task LoseHealth(float Damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - Damage, 0, startHealth);
 
@@ -42,6 +43,12 @@ public class PlayerHealth : MonoBehaviour
                 GetComponent<PlayerControl>().enabled = true;
                 dead = true;
 
+                if (SceneManager.GetActiveScene().name == "Level 1")
+                {
+                    await Task.Delay(2000);
+                    GameLevelManager.Respawn();
+                    currentHealth = startHealth;
+                }
                 if (SceneManager.GetActiveScene().name == "Level 2")
                 {
                     SceneManager.LoadScene("Game Over screen");
