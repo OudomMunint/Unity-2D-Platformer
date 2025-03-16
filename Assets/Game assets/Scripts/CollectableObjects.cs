@@ -4,19 +4,13 @@ using UnityEngine;
 
 public class CollectableObjects : MonoBehaviour
 {
-    //Variable for Initial score and coins add on score
+    //Init scrore values
     private LevelManager GameLevelManager;
     public int coinValue;
 
-    [System.Obsolete]
     void Start()
     {
-        GameLevelManager = FindObjectOfType<LevelManager>();      
-    }
-
-    void Update()
-    {
-        
+        GameLevelManager = FindFirstObjectByType<LevelManager>();      
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -25,7 +19,11 @@ public class CollectableObjects : MonoBehaviour
         {
             GameLevelManager.AddCoins(coinValue);
             Destroy(gameObject);          
-        }
-      
+        } 
+    }
+
+    void Update()
+    {
+
     }
 }

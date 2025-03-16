@@ -1,36 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
-
-    //Variables for Respawning delay setting
-    //Respawning delay mean it will allow the player some times before respawn
     public float PlayerRespawnDelay;
     public PlayerControl PlayerControl;
-
-
-    //Variable for Collectable item controls
     public int Coins;
-
-    //Variables for the UI 
     public Text ScoreText;
-
-    //public Text Score;
-
-    [System.Obsolete]
-    void Start()
-    {
-        PlayerControl = FindObjectOfType<PlayerControl>();
-        ScoreText.text = "Score: " + Coins;
-    }
-
-    void Update()
-    {
-        
-    }
 
     public void Respawn()
     {
@@ -50,5 +29,20 @@ public class LevelManager : MonoBehaviour
         Coins += numberofCoins;
         ScoreText.text = "Score: " + Coins;
         DontDestroyOnLoad(ScoreText);
+    }
+
+    void Start()
+    {
+        PlayerControl = FindFirstObjectByType<PlayerControl>();
+
+        if (ScoreText != null)
+        {
+            ScoreText.text = "Score: " + Coins;
+        }
+    }
+
+    void Update()
+    {
+        
     }
 }

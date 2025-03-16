@@ -9,29 +9,32 @@ EditorBuildSettings:
     path: Assets/All scenes/Main Menu.unity
     guid: fa0913115ac1d4fba8b9d10280f4b04d
   - enabled: 1
-    path: Assets/All scenes/Level 1.unity
-    guid: d30fbee988f498842a6e22beea9f1786
-  - enabled: 1
-    path: Assets/All scenes/Win Screen.unity
-    guid: d5545059c6381d848ab3d612c68f2669
-  - enabled: 1
     path: Assets/All scenes/Intro Video.unity
     guid: 52843f7ae2eddd4459291a3d1717f8d8
   - enabled: 1
     path: Assets/All scenes/Game Over screen.unity
     guid: f1d0a03df21843a40ac44b3dc43b682f
   - enabled: 1
+    path: Assets/All scenes/Game Over 2.unity
+    guid: 1c350a416bbd9914aaf18a53e30d28f3
+  - enabled: 1
     path: Assets/All scenes/Abandon screen.unity
     guid: 7a88cbaac79d6f24ba9636a5136e75ff
+  - enabled: 1
+    path: Assets/All scenes/Level 1.unity
+    guid: d30fbee988f498842a6e22beea9f1786
+  - enabled: 1
+    path: Assets/All scenes/Win Screen.unity
+    guid: d5545059c6381d848ab3d612c68f2669
   - enabled: 1
     path: Assets/All scenes/Level 2.unity
     guid: 7d78e81f305463f4dafab796219f6480
   - enabled: 1
+    path: Assets/All scenes/Win screen 2.unity
+    guid: 57996340a8c2cfc45a001b7cc919f4f4
+  - enabled: 1
     path: Assets/All scenes/Level 3.unity
     guid: ac6a292b9bfb2374abd72fe5fdecc15f
-  - enabled: 1
-    path: Assets/All scenes/Win screen Lvl2.unity
-    guid: 57996340a8c2cfc45a001b7cc919f4f4
   - enabled: 1
     path: Assets/All scenes/Win screen 3.unity
     guid: 67452747005ed7d459daf23667517386

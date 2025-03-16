@@ -6,11 +6,11 @@ public class EnemyHazard : MonoBehaviour
 {
     [SerializeField] private float Damage;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private async void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        if (collision.tag == "Player")
         {
-            collision.GetComponent<PlayerHealth>().Healthloose(Damage);
+            await collision.GetComponent<PlayerHealth>().LoseHealth(Damage);
         }
     }
     // Start is called before the first frame update
