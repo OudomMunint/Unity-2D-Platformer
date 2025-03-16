@@ -48,6 +48,8 @@ public class PlayerHealth : MonoBehaviour
                     await Task.Delay(2000);
                     GameLevelManager.Respawn();
                     currentHealth = startHealth;
+                    dead = false;
+                    GetComponent<PlayerControl>().enabled = true;
                 }
                 if (SceneManager.GetActiveScene().name == "Level 2")
                 {
