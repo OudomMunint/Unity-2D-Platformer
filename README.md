@@ -52,7 +52,7 @@ Unity version       | 2023.1.9f1                       | 2023.1.9f1             
 # Downloads
 Note: These builds were packaged with `Unity 2023.1.9f1`
 - <b>Windows x86_64:</b> [Here](https://www.dropbox.com/scl/fi/ktu62usxhe5llm8c3erun/2D-Platformer-win_x86_64.zip?rlkey=diair3v7ovtvsmjri86zxpgeg&st=sndl5glt&dl=0)
-- <b>macOS arm64 `Apple Silicon` & `Intel`:</b> [Here](https://www.dropbox.com/scl/fi/9ys58893czt5aztf2tbu0/2D-Platformer-macOS.zip?rlkey=9g6arbwaxsqeflqlj8yqnlbuo&st=h9uqhtq1&dl=0)
+- <b>macOS arm64 `Apple Silicon` & `Intel`:</b> [Here](https://www.dropbox.com/scl/fi/xx43frgsjdb8rze6nyo8p/2D-Platformer-macOS.zip?rlkey=d1zyl9s5q1pox8gpjhukjc20y&st=686w0awz&dl=0)
 
 ## Notes
 - You may need to allow the app to run on macOS by going to `System Preferences` > `Security & Privacy` > `General` > `Open Anyway`.
