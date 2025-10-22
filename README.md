@@ -5,6 +5,10 @@ This project targets `macOS`, `Windows`. <br>
 This project can be run on both `Apple Silicon` and `Intel` based Macs. <br>
 Find download links below, there are 2 builds available for download, `Windows x86_64` & `macOS Universal`.
 
+## **Important**
+### The version of unity this project uses has security vulnerabilities. <br>
+Please see: https://unity.com/security/sept-2025-01
+
 # Features
 - Continouse integration build pipeline.
 - Activation file generation pipeline.
